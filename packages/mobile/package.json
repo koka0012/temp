@@ -1,5 +1,5 @@
 {
-  "name": "@/mobile",
+  "name": "@rhsoftware/mobile",
   "version": "0.0.1",
   "private": true,
   "scripts": {
@@ -11,8 +11,10 @@
     "clear": "react-native start --reset-cache"
   },
   "dependencies": {
+    "@rhsoftware/common": "^0.0.1",
     "react": "16.8.6",
-    "react-native": "0.60.3"
+    "react-native": "0.60.3",
+    "react-native-monorepo-helper": "^0.2.6"
   },
   "devDependencies": {
     "@babel/core": "^7.5.0",
@@ -23,6 +25,7 @@
     "@types/react-native": "^0.60.1",
     "@types/react-test-renderer": "^16.8.2",
     "babel-jest": "^24.1.0",
+    "babel-plugin-optional-require": "^0.3.1",
     "jest": "^24.1.0",
     "metro-react-native-babel-preset": "^0.54.1",
     "react-test-renderer": "16.8.6",

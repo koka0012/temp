@@ -6,18 +6,34 @@
       "packages/*"
     ],
     "nohoist": [
+      "**/@rhsoftware/mobile",
+      "**/@rhsoftware/mobile/**",
+      "**/mobile",
+      "**/mobile/**",
       "**/react-native",
       "**/react-native/**"
     ]
   },
   "scripts": {
     "setup": "./scripts/setup.sh",
-    "mobile:android": "yarn workspace @/mobile android",
-    "mobile:ios": "yarn workspace @/mobile ios",
-    "mobile:clear": "yarn workspace @/mobile clear",
-    "mobile:pod": "yarn workspace @/mobile pod:install"
+    "mobile:android": "yarn workspace @rhsoftware/mobile android",
+    "mobile:ios": "yarn workspace @rhsoftware/mobile ios",
+    "mobile:clear": "yarn workspace @rhsoftware/mobile clear",
+    "mobile:pod": "yarn workspace @rhsoftware/mobile pod:install"
   },
   "devDependencies": {
+    "@babel/plugin-transform-flow-strip-types": "^7.6.3",
+    "@babel/cli": "^7.6.2",
+    "@babel/core": "^7.6.2",
+    "@babel/plugin-proposal-class-properties": "7.5.5",
+    "@babel/plugin-proposal-export-default-from": "7.5.2",
+    "@babel/plugin-proposal-export-namespace-from": "7.5.2",
+    "@babel/plugin-transform-react-jsx-source": "7.5.0",
+    "@babel/plugin-transform-typescript": "7.6.0",
+    "@babel/preset-env": "^7.6.2",
+    "@babel/preset-react": "7.0.0",
+    "@babel/preset-typescript": "7.6.0",
+    "babel-plugin-idx": "^2.4.0",
     "lerna": "^3.18.1"
   }
 }
