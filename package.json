@@ -12,6 +12,9 @@
   },
   "scripts": {
     "setup": "./scripts/setup.sh",
+    "mobile:android": "yarn workspace @/mobile android",
+    "mobile:ios": "yarn workspace @/mobile ios",
+    "mobile:clear": "yarn workspace @/mobile clear",
     "mobile:pod": "yarn workspace @/mobile pod:install"
   },
   "devDependencies": {

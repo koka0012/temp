@@ -13,3 +13,14 @@ $ yarn setup // TODO
 ```
 
 Pode demorar alguns bons minutos, aproveite esse tempo para tomar um café.
+
+## Comandos disponíveis
+
+| Comando               | Descrição                                           |
+| --------------------- | --------------------------------------------------- |
+| `yarn setup`          | Configura o ambiente para começar o desenvolvimento |
+| **Mobile**            |
+| `yarn mobile:pod`     | Instala os pods no iOS.                             |
+| `yarn mobile:android` | Roda a aplicação no Android.                        |
+| `yarn mobile:ios`     | Roda a aplicação no iOS.                            |
+| `yarn mobile:clear`   | Roda o package limpando todo o cache.               |
