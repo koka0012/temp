@@ -5,7 +5,10 @@
   "scripts": {
     "start": "react-native start",
     "test": "jest",
-    "pod:install": "cd ./ios && pod install && cd .."
+    "pod:install": "cd ./ios && pod install && cd ..",
+    "android": "react-native run-android",
+    "ios": "react-native run-ios",
+    "clear": "react-native start --reset-cache"
   },
   "dependencies": {
     "react": "16.8.6",
